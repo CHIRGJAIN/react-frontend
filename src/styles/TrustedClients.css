@@ -1,0 +1,15 @@
+.trusted-clients {
+    text-align: center;
+    padding: 20px;
+  }
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+    .client-logo {
+        width: 100px;
+        height: auto;
+    }  

@@ -1,0 +1,24 @@
+.explore-category {
+    text-align: center;
+    padding: 20px;
+  }
+  .category-slider {
+    display: flex;
+    overflow-x: 500px;
+    gap: 20px;
+  }
+  .category-card {
+    flex: 0 0 auto;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .category-card img {
+    width: 100%;
+  }
+  .category-card h3 {
+    margin: 10px 0;
+  }
+   

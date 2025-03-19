@@ -1,0 +1,16 @@
+.clients {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .client-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .client-list img {
+    width: 100px;
+    height: auto;
+  }
+  
