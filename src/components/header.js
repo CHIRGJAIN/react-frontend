@@ -2,16 +2,11 @@ import React from "react";
 import "../styles/Header.css";
 import logo from "../assets/logo.png";
 
-
-const Logo = [
-  {image:logo, name:"logo"}
-]
-
 function Header() {
   return (
     <header className="header">
       <div className="logo"> 
-        <img src={Logo} alt="Logo" />
+        <img src={logo} alt="logo" />
       </div>
       <nav>
         <ul>
