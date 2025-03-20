@@ -1,6 +1,7 @@
 .clients {
     text-align: center;
     padding: 40px 20px;
+    background: #f8f8d9;
   }
   
   .client-list {
@@ -12,5 +13,6 @@
   .client-list img {
     width: 100px;
     height: auto;
+
   }
   

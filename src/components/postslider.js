@@ -1,59 +1,44 @@
-import { useState, useEffect } from "react";
-import poster1 from "../assets/slide1.jpg";
-import poster2 from "../assets/slide2.jpg";
-import poster3 from "../assets/slide3.jpg";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "../styles/Slider.css"; // Add custom styles
 
-const images = [poster1, poster2, poster3];
+// Sample slides (replace with your actual images)
+const slides = [
+  { id: 1, img: require("../assets/slide1.jpg"), text: "FIND THE RIGHT LAPTOP/DESKTOP, WITHOUT HURTING YOUR WALLET", subtext: "Laptops are available for Office Use, Classrooms, Corporate Meetings, Events & Exhibition with low budgets." },
+  { id: 2, img: require("../assets/slide2.jpg"), text: "POWERFUL & AFFORDABLE COMPUTING", subtext: "Get the best deals on high-performance laptops for business and gaming." },
+  { id: 3, img: require("../assets/slide3.jpg"), text: "STAY PRODUCTIVE ANYWHERE", subtext: "Lightweight and portable laptops designed for professionals on the go." },
+];
 
-const PosterSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Auto-slide every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 3000);
-
-    return () => clearInterval(interval); // Cleanup interval
-  }, [currentIndex]);
-
-  // Function to go to the next slide
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  // Function to go to the previous slide
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
+const Slider = () => {
   return (
-    <div className="relative w-full max-w-4xl mx-auto mt-5">
-      {/* Image Display */}
-      <img
-        src={images[currentIndex]}
-        alt="Poster"
-        className="w-full h-auto rounded-lg shadow-lg transition-opacity duration-700"
-      />
-
-      {/* Navigation Buttons */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black text-white px-4 py-2 rounded"
+    <div className="slider-container">
+      <Swiper
+        modules={[Autoplay, Navigation, Pagination]}
+        spaceBetween={50}
+        slidesPerView={1}
+        loop={true}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        navigation
+        pagination={{ clickable: true }}
       >
-        ◀
-      </button>
-
-      <button
-        onClick={nextSlide}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black text-white px-4 py-2 rounded"
-      >
-        ▶
-      </button>
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <div className="slide">
+              <img src={slide.img} alt="Slide" className="slide-image" />
+              <div className="slide-content">
+                <h2>{slide.text}</h2>
+                <p>{slide.subtext}</p>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };
 
-export default PosterSlider;
+export default Slider;

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "../styles/Reviews.css";
+import user1 from "../assets/user1.jpg";
+const user1Image = user1;
 
 const reviews = [
-  { name: "John Doe", text: "Great service and quality!" },
+  { name: "John Doe", text: "Great service and quality!",image:{user1Image}},
   { name: "Jane Smith", text: "Fast delivery and amazing products!" },
   { name: "Alex Brown", text: "Highly recommended for tech enthusiasts!" },
 ];
