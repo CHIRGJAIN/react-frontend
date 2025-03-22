@@ -1,0 +1,33 @@
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+  }
+  
+  .card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    color: #d4af37; /* Golden Color */
+    font-size: 35px;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .card-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  
