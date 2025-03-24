@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/header";
-import SearchBar from "../components/searchbar";
+//import SearchBar from "../components/searchbar";
 import Categories from "../components/categories";
 import ExploreCategory from "../components/explorecategory";
 import TrustedClients from "../components/trustedclients";
@@ -11,7 +11,6 @@ function Home() {
   return (
     <div>
       <Header />
-      <SearchBar />
       <PosterSlider />
       <Categories />
       <ExploreCategory />

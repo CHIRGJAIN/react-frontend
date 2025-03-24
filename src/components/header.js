@@ -1,12 +1,18 @@
 import React from "react";
 import "../styles/Header.css";
 import logo from "../assets/logo.png";
+import SearchBar from "./SearchBar";
+import cartIcon from "../assets/cart.png"; // Update path as needed
+
 
 function Header() {
   return (
     <header className="header">
-      <div className="logo"> 
-        <img src={logo} alt="logo" />
+      <div className="left-section">
+        <div className="logo"> 
+          <img src={logo} alt="logo" />
+        </div>
+        <SearchBar />
       </div>
       <nav>
         <ul>
@@ -14,9 +20,14 @@ function Header() {
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="/login">Login</a></li>
-          
-        </ul>
+          <li className="cart-icon">
+            <a href="/cart">
+            <img src={cartIcon} alt="Cart" />
+            </a>
+          </li>
+          </ul>
       </nav>
+
     </header>
   );
 }
