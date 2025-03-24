@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Header.css";
 import logo from "../assets/logo.png";
-import SearchBar from "./SearchBar";
+import SearchBar from "./searchbar";
 import cartIcon from "../assets/cart.png"; // Update path as needed
 
 
