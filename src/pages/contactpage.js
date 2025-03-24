@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/ContactPage.css"; // Import the CSS file
+import Header from "../components/header";
 
 const ContactPage = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -13,6 +14,8 @@ const ContactPage = () => {
   };
 
   return (
+    <div>
+      <Header />
     <div className="contact-container">
       <div className="contact-box">
         <h1>Contact Us</h1>
@@ -35,6 +38,7 @@ const ContactPage = () => {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };
