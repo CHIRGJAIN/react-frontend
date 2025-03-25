@@ -1,8 +1,8 @@
 .slider-container {
-<<<<<<< HEAD
+
     width: 100vw;
     max-width: 100%;
-=======
+
   width: 100vw; /* Full viewport width */
   max-width: 100%; /* Remove fixed width */
   margin: 10px 0px; /* Remove auto margin */
@@ -83,27 +83,25 @@
     background: white;
   }
   
-<<<<<<< HEAD
+
   .swiper-pagination-bullet {
     background: rgba(255, 255, 255, 0.5);
   }
 
 .swiper {
-  width: 100%; /* Ensure the Swiper takes full width */
-  border-radius: 0; /* Optional: Remove rounded corners if needed */
-  box-shadow: none; /* Optional: Remove shadow for full-width effect */
+  width: 100%; 
+  border-radius: 0; 
+  box-shadow: none; 
 }
 
 .slide {
   width: 100%; 
   height: 500px; /* Adjust height as needed */
-}
+/* } */
 
 .slide-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-=======
-======= */
->>>>>>> f633cb40d6a9930ae43c0fff07e8ff6fa7157388
+
