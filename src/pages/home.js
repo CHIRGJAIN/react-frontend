@@ -5,7 +5,7 @@ import Categories from "../components/categories";
 import ExploreCategory from "../components/explorecategory";
 import TrustedClients from "../components/trustedclients";
 import CustomerReviews from "../components/customerreviews";
-import PosterSlider from "../components/postslider";  
+import PosterSlider from "../components/PostSlider";  
 
 function Home() {
   return (

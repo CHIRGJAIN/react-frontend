@@ -157,3 +157,24 @@ input {
 .background-image img {
   width: 100%;
 }
+/* Admin/User Toggle */
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.toggle-container span {
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  border-radius: 8px;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.toggle-container .active {
+  background: #6c48fc;
+  color: white;
+}
