@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Header.css";
 import logo from "../assets/logo.png";
-import SearchBar from "./SearchBar";
+import SearchBar from "./searchbar";
 import cartIcon from "../assets/cart.png"; 
 
 function Header() {

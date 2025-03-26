@@ -6,6 +6,7 @@ import LoginPage from "./pages/loginpage";
 import SignupPage from "./pages/signuppage";
 import Contact from "./pages/contactpage";
 import About from "./pages/aboutpage";
+import AdminDashboard from "./pages/AdminDashboard";
 import "./App.css";
 
 function App() {
@@ -13,15 +14,6 @@ function App() {
 
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<ProductPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<SignupPage />} /> 
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} /> 
-      </Routes>
-
       <div className={`main-content ${isCartOpen ? "shifted" : ""}`}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,6 +22,7 @@ function App() {
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/admindashboard" element ={<AdminDashboard />} />
         </Routes>
       </div>
     </Router>
